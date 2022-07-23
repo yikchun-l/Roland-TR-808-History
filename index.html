@@ -1,0 +1,1934 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        body {
+            margin: auto;
+            padding: 50px 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Lora', serif;
+        }
+
+        .sans-serif {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* choose a light or dark theme to add to the body tag. */
+        .dark-theme {
+            background-color: #151515;
+            color: #fbfbfb;
+        }
+
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .header-img {
+            max-width: 100%;
+            max-height: 100%;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .header,
+        .story-body,
+        .footer {
+            margin: auto;
+            max-width: 700px;
+        }
+        
+        .chart-section {
+            margin: auto;
+            max-width: 700px;
+        }
+
+        .footer {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .chart-section.wide {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .chart-section.wide p.chart-title {
+            width: 100%;
+            max-width: 700px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .chart-section.wide p.chart-subhead {
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        /* text styles */
+
+        /* https://cssgenerator.org/text-shadow-css-generator.html */
+        /* #shadow {
+            text-shadow: 3px 4px 2px rgba(233, 105, 105, 0.6);
+        } */
+
+
+        p.kicker {
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1.headline {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-weight: 800;
+        }
+
+        h2.subhead {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom: 0;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        p.body-text {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        h3.section-head {
+            font-size: 2rem;
+            margin: 40px 0 10px 0;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            line-height: 0.75;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+
+        p.note {
+            font-size: 0.85rem;
+        }
+
+        /* chart styles */
+
+        /* .chart-section {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px 0px;
+        }
+
+        .story-body .chart-section {
+            padding-top: 0px;
+        }
+
+
+        .chart-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        p.chart-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            max-width: 700px;
+            margin: 0px auto 5px auto;
+        }
+
+        p.chart-subhead {
+            margin: 0 auto;
+            max-width: 700px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        p.chart-label {
+            margin: 0 0 5px 0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .chart-row .chart {
+            width: 100%;
+            padding-right: 15px;
+            min-width: calc(25% - 15px);
+
+        }
+
+
+
+        p.chart-source {
+            font-size: 0.85rem;
+            margin: 0;
+        } */
+
+        #g-220714-808s-records-count-box ,
+	#g-220714-808s-records-count-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-220714-808s-records-count-box p {
+		margin:0;
+	}
+	#g-220714-808s-records-count-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-220714-808s-records-count-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-220714-808s-records-count-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-220714-808s-records-count-box .g-aiPointText p { white-space: nowrap; }
+	#g-220714-808s-records-count-lg {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-records-count-lg p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-220714-808s-records-count-lg .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		height:39px;
+		font-size:33px;
+	}
+	#g-220714-808s-records-count-lg .g-pstyle1 {
+		height:25px;
+	}
+	#g-220714-808s-records-count-lg .g-pstyle2 {
+		font-weight:700;
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+	}
+	#g-220714-808s-records-count-lg .g-pstyle3 {
+		font-weight:500;
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+		color:rgb(116,116,116);
+	}
+	#g-220714-808s-records-count-xs {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-records-count-xs p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-220714-808s-records-count-xs .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		font-size:33px;
+	}
+	#g-220714-808s-records-count-xs .g-pstyle1 {
+		font-weight:500;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+		color:rgb(116,116,116);
+	}
+	#g-220714-808s-records-count-xs .g-pstyle2 {
+		line-height:39px;
+		height:39px;
+		font-size:32px;
+	}
+	#g-220714-808s-records-count-xs .g-pstyle3 {
+		line-height:26px;
+		font-size:22px;
+	}
+	#g-220714-808s-records-count-sm {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-records-count-sm p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-220714-808s-records-count-sm .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		font-size:33px;
+	}
+	#g-220714-808s-records-count-sm .g-pstyle1 {
+		font-weight:500;
+		line-height:26px;
+		height:26px;
+		font-size:22px;
+		color:rgb(116,116,116);
+	}
+	#g-220714-808s-records-count-sm .g-pstyle2 {
+		line-height:39px;
+		height:39px;
+		font-size:32px;
+	}
+	#g-220714-808s-records-count-sm .g-pstyle3 {
+		line-height:26px;
+		font-size:22px;
+	}
+	#g-220714-808s-records-count-md {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-records-count-md p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:26px;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:22px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-220714-808s-records-count-md .g-pstyle0 {
+		font-weight:bold;
+		line-height:38px;
+		height:38px;
+		font-size:32px;
+	}
+	#g-220714-808s-records-count-md .g-pstyle1 {
+		font-weight:500;
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+		color:rgb(116,116,116);
+	}
+	#g-220714-808s-records-count-md .g-pstyle2 {
+		line-height:39px;
+	}
+	#g-220714-808s-records-count-md .g-cstyle0 {
+		font-size:32px;
+	}
+
+    #g-220714-808s-genres-count-box ,
+	#g-220714-808s-genres-count-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-220714-808s-genres-count-box p {
+		margin:0;
+	}
+	#g-220714-808s-genres-count-box .g-aiAbs {
+		position:absolute;
+	}
+	#g-220714-808s-genres-count-box .g-aiImg {
+		position:absolute;
+		top:0;
+		display:block;
+		width:100% !important;
+	}
+	#g-220714-808s-genres-count-box .g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	#g-220714-808s-genres-count-box .g-aiPointText p { white-space: nowrap; }
+	#g-220714-808s-genres-count-lg {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-genres-count-lg p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		height:auto;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-220714-808s-genres-count-lg .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		height:39px;
+		font-size:32px;
+	}
+	#g-220714-808s-genres-count-lg .g-pstyle1 {
+		height:25px;
+	}
+	#g-220714-808s-genres-count-lg .g-pstyle2 {
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+	}
+	#g-220714-808s-genres-count-lg .g-pstyle3 {
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+		color:rgb(255,255,255);
+	}
+	#g-220714-808s-genres-count-xs {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-genres-count-xs p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-220714-808s-genres-count-xs .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		font-size:32px;
+	}
+	#g-220714-808s-genres-count-xs .g-pstyle1 {
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+	}
+	#g-220714-808s-genres-count-xs .g-pstyle2 {
+		line-height:20px;
+		height:20px;
+		font-size:17px;
+	}
+	#g-220714-808s-genres-count-sm {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-genres-count-sm p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-220714-808s-genres-count-sm .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		height:39px;
+		font-size:32px;
+	}
+	#g-220714-808s-genres-count-sm .g-pstyle1 {
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+	}
+	#g-220714-808s-genres-count-sm .g-pstyle2 {
+		line-height:20px;
+		height:20px;
+		font-size:17px;
+	}
+	#g-220714-808s-genres-count-md {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-220714-808s-genres-count-md p {
+		font-family:arial,helvetica,sans-serif;
+		line-height:25px;
+		opacity:1;
+		letter-spacing:0em;
+		font-size:21px;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		height:auto;
+		position:static;
+	}
+	#g-220714-808s-genres-count-md .g-pstyle0 {
+		font-weight:bold;
+		line-height:39px;
+		height:39px;
+		font-size:32px;
+	}
+	#g-220714-808s-genres-count-md .g-pstyle1 {
+		line-height:21px;
+		height:21px;
+		font-size:18px;
+	}
+	#g-220714-808s-genres-count-md .g-pstyle2 {
+		line-height:20px;
+		height:20px;
+		font-size:17px;
+	}
+	#g-220714-808s-genres-count-md .g-pstyle3 {
+		line-height:20px;
+		height:20px;
+		font-size:17px;
+		color:rgb(255,255,255);
+	}
+        
+
+
+
+
+        /* photos */
+
+        .photo-section {
+            padding: 30px 0px;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            max-width: 1200px;
+        }
+
+        .photo {
+            width: 100%;
+            padding-right: 15px;
+        }
+
+        .photo img {
+            width: 100%;
+        }
+
+        p.caption {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* mobile */
+        @media (max-width:700px) {
+
+            .chart-row {
+                display: block;
+            }
+
+            .chart-row .chart {
+                padding: 0;
+            }
+
+            .photo-section {
+                display: block;
+            }
+
+            .photo {
+                padding: 0;
+            }
+
+        }
+    </style>
+    <style>
+        /* These are the styles for ai2html */
+
+        #g-template-laptop,
+        #g-template-medium,
+        #g-template-mobile {
+            display: none;
+        }
+
+        @media (max-width: 490px) {
+            #g-template-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 490px) and (max-width: 620px) {
+            #g-template-laptop {
+                display: block;
+            }
+        }
+
+        @media (min-width: 620px) {
+            #g-template-medium {
+                display: block;
+            }
+        }
+    </style>
+
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+
+    <title>The Roland TR-808: House (Music) Always Wins</title>
+</head>
+
+<body class="light-theme">
+    <!-- all of the content on your html page goes inside the body -->
+    <section class="header-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Roland_TR-808_%28large%29.jpg/800px-Roland_TR-808_%28large%29.jpg" alt="Ryuichi Sakamoto with TR-808" style="width:100%;">
+    </section>
+    <section class="header">
+        <p class="kicker">Music</p>
+        <h1 class="headline">The Roland TR-808: House Always Wins</h1>
+        <h2 class="subhead">
+            Which genres of music heavily utilised the Roland TR-808? From one user-compiled Discogs list, we can see what a snippet of its wide influence looks like.
+        </h2>
+        <p class="byline">By Yikchun Lam</p>
+        <p class="date">Published July 14, 2022</p>
+    </section>
+
+    <section class="story-body">
+        <p class="body-text serif">
+            Do you recognise any of these sounds?
+        </p>
+        <audio controls>
+            <source src="TR808WAV/BD/BD5010.WAV" type="audio/wav">
+        </audio> 
+        <audio controls>
+            <source src="TR808WAV/SD/SD2510.WAV" type="audio/wav">
+        </audio> 
+        <audio controls>
+            <source src="TR808WAV/CB/CB.WAV" type="audio/wav">
+        </audio> 
+        <audio controls>
+            <source src="TR808WAV/CP/CP.WAV" type="audio/wav">
+        </audio> 
+        <p class="body-text serif">
+            No? You might recognise them if those sounds were arranged like this, though.
+        </p>
+        <section class="story-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_rlUQsC8ECk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <p class="body-text serif">
+            The year is 1982, and Afrika Bambaataa has just released "Planet Rock". "Planet Rock" is just one of the many records that the Roland TR-808 has lent its sounds to. But it wasn't always this popular. In fact, it was a complete failure.
+            Released sometime between 1980 and 1983 by the Roland Corporation, the TR-808 Rhythm Composer featured 16 programmable keys, with options to modify the sound more by changing the attack, decay, and volume of each key. <br><br>
+            These sounds, layered together, would create a track. In those early days of electronic music, it was rare for a drum machine to be able to replicate an analog sound (someone playing an actual set of drums, for example). The 808 didn't manage to do that either, and the general weirdness of it, combined with the fact that the semiconductors that the 808 used eventually went out of production, meant that it was a commercial flop.<br><br>
+            Until Planet Rock came along.
+        </p>
+
+        <h2 class="subhead">
+            Crate Digging
+        </h2>
+        <p class="body-text serif">
+            There were a few playlists on Spotify and other platforms that supposedly featured tracks that used the 808's beats, but these were all top hits. Where were the rest of the tracks? Fortunately, I stumbled upon a list by Discogs user disman00911 — a list that was, at the time of my analysis, 1482 items long. (The list has since been updated again). Using the Discogs API, I pulled the list of records and went through the items to see what I could find. Here we go!<br><br>
+            Figuring out where to start in this giant list of songs was a challenge, but let's start with the obvious first -- when were these records released?
+        </p>
+    </section>
+    
+    <section class="chart-section">
+        <div class="chart-row">
+            <div class="chart">
+
+                <!--- PASTE YOUR AI2HTML AFTER THIS LINE -->
+                <div id="g-220714-808s-records-count-box" class="ai2html ai2html-responsive">
+
+                    <!-- Artboard: lg -->
+                    <div id="g-220714-808s-records-count-lg" class="g-artboard" style="width:930px; height:565.314163328107px;" data-aspect-ratio="1.645" data-min-width="930">
+                <div style=""></div>
+                        <img id="g-220714-808s-records-count-lg-img" class="g-808s-records-count-lg-img g-aiImg" alt="" src="ai2html/images/220714-808s-records-count-lg.png"/>
+                        <div id="g-ai0-1" class="g-lg g-aiAbs g-aiPointText" style="top:6.0294%;margin-top:-23.1px;left:1.993%;width:660px;">
+                            <p class="g-pstyle0">Number Of Records That Use The TR-808</p>
+                        </div>
+                        <div id="g-ai0-2" class="g-lg g-aiAbs g-aiPointText" style="top:11.7188%;margin-top:-14.2px;left:1.993%;width:855px;">
+                            <p class="g-pstyle1">The Roland TR-808 saw its heyday in 1988, with a whopping 167 records making use of its</p>
+                        </div>
+                        <div id="g-ai0-3" class="g-lg g-aiAbs g-aiPointText" style="top:16.1411%;margin-top:-14.2px;left:1.993%;width:180px;">
+                            <p class="g-pstyle1">sounds that year.</p>
+                        </div>
+                        <div id="g-ai0-4" class="g-lg g-aiAbs g-aiPointText" style="top:24.4993%;margin-top:-11.5px;left:21.9895%;width:53px;">
+                            <p class="g-pstyle2">167</p>
+                        </div>
+                        <div id="g-ai0-5" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:14.4704%;width:62px;">
+                            <p class="g-pstyle3">1985</p>
+                        </div>
+                        <div id="g-ai0-6" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:26.1767%;width:62px;">
+                            <p class="g-pstyle3">1990</p>
+                        </div>
+                        <div id="g-ai0-7" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:37.883%;width:62px;">
+                            <p class="g-pstyle3">1995</p>
+                        </div>
+                        <div id="g-ai0-8" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:49.5893%;width:62px;">
+                            <p class="g-pstyle3">2000</p>
+                        </div>
+                        <div id="g-ai0-9" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:61.3021%;width:62px;">
+                            <p class="g-pstyle3">2005</p>
+                        </div>
+                        <div id="g-ai0-10" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:73.0083%;width:62px;">
+                            <p class="g-pstyle3">2010</p>
+                        </div>
+                        <div id="g-ai0-11" class="g-lg g-aiAbs g-aiPointText" style="top:95.964%;margin-top:-11.5px;left:84.7146%;width:62px;">
+                            <p class="g-pstyle3">2015</p>
+                        </div>
+                    </div>
+                
+                    <!-- Artboard: xs -->
+                    <div id="g-220714-808s-records-count-xs" class="g-artboard" style="max-width: 330px;max-height: 1173px" data-aspect-ratio="0.281" data-min-width="0" data-max-width="509">
+                <div style="padding: 0 0 355.495% 0;"></div>
+                        <img id="g-220714-808s-records-count-xs-img" class="g-808s-records-count-xs-img g-aiImg" alt="" src="ai2html/images/220714-808s-records-count-xs.png"/>
+                        <div id="g-ai1-1" class="g-xs g-aiAbs" style="top:1.0229%;left:3.7955%;width:86.3636%;">
+                            <p class="g-pstyle0">Number Of Records That Use The TR-808</p>
+                        </div>
+                        <div id="g-ai1-2" class="g-xs g-aiAbs" style="top:11.5076%;left:4.9504%;width:90%;">
+                            <p>The Roland TR-808 saw its heyday in 1988, with a whopping 167 records making use of its sounds that year.</p>
+                        </div>
+                        <div id="g-ai1-3" class="g-xs g-aiAbs g-aiPointText" style="top:23.3043%;margin-top:-14.4px;left:8.5483%;width:71px;">
+                            <p class="g-pstyle1">1981</p>
+                        </div>
+                        <div id="g-ai1-4" class="g-xs g-aiAbs g-aiPointText" style="top:52.4745%;margin-top:-22.6px;left:54.1326%;width:76px;">
+                            <p class="g-pstyle2">167</p>
+                        </div>
+                        <div id="g-ai1-5" class="g-xs g-aiAbs" style="top:54.1285%;left:54.7388%;width:38.1818%;">
+                            <p class="g-pstyle3">Records were produced in 1988 that included sounds from the TR-808</p>
+                        </div>
+                    </div>
+                
+                    <!-- Artboard: sm -->
+                    <div id="g-220714-808s-records-count-sm" class="g-artboard" style="width:510px; height:1106.02284173182px;" data-aspect-ratio="0.461" data-min-width="510" data-max-width="659">
+                <div style=""></div>
+                        <img id="g-220714-808s-records-count-sm-img" class="g-808s-records-count-sm-img g-aiImg" alt="" src="ai2html/images/220714-808s-records-count-sm.png"/>
+                        <div id="g-ai2-1" class="g-sm g-aiAbs" style="top:0.8137%;left:1.9294%;width:95.6863%;">
+                            <p class="g-pstyle0">Number Of Records That Use The TR-808</p>
+                        </div>
+                        <div id="g-ai2-2" class="g-sm g-aiAbs" style="top:8.3181%;left:2.6768%;width:94.1176%;">
+                            <p>The Roland TR-808 saw its heyday in 1988, with a whopping 167 records making use of its sounds that year.</p>
+                        </div>
+                        <div id="g-ai2-3" class="g-sm g-aiAbs g-aiPointText" style="top:18.1182%;margin-top:-14.4px;left:7.7498%;width:71px;">
+                            <p class="g-pstyle1">1981</p>
+                        </div>
+                        <div id="g-ai2-4" class="g-sm g-aiAbs g-aiPointText" style="top:50.8666%;margin-top:-22.6px;left:70.1876%;width:76px;">
+                            <p class="g-pstyle2">167</p>
+                        </div>
+                        <div id="g-ai2-5" class="g-sm g-aiAbs" style="top:52.621%;left:70.5798%;width:24.7059%;">
+                            <p class="g-pstyle3">Records were produced in 1988 that included sounds from the TR-808</p>
+                        </div>
+                        <div id="g-ai2-6" class="g-sm g-aiAbs g-aiPointText" style="top:96.5071%;margin-top:-14.4px;left:8.9828%;width:71px;">
+                            <p class="g-pstyle1">2019</p>
+                        </div>
+                    </div>
+                
+                    <!-- Artboard: md -->
+                    <div id="g-220714-808s-records-count-md" class="g-artboard" style="width:660px; height:1057.45823370825px;" data-aspect-ratio="0.624" data-min-width="660" data-max-width="929">
+                <div style=""></div>
+                        <img id="g-220714-808s-records-count-md-img" class="g-808s-records-count-md-img g-aiImg" alt="" src="ai2html/images/220714-808s-records-count-md.png"/>
+                        <div id="g-ai3-1" class="g-md g-aiAbs g-aiPointText" style="top:3.5583%;margin-top:-22.6px;left:2.5374%;width:646px;">
+                            <p class="g-pstyle0">Number Of Records That Use The TR-808</p>
+                        </div>
+                        <div id="g-ai3-2" class="g-md g-aiAbs" style="top:5.674%;left:2.5374%;width:92.4242%;">
+                            <p>The Roland TR-808 saw its heyday in 1988, with a whopping 167 records making use of its sounds that year.</p>
+                        </div>
+                        <div id="g-ai3-3" class="g-md g-aiAbs g-aiPointText" style="top:25.2963%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">1985</p>
+                        </div>
+                        <div id="g-ai3-4" class="g-md g-aiAbs g-aiPointText" style="top:35.6041%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">1990</p>
+                        </div>
+                        <div id="g-ai3-5" class="g-md g-aiAbs" style="top:42.744%;left:53.8223%;width:32.8788%;">
+                            <p class="g-pstyle2"><span class="g-cstyle0">167 </span>records were produced in 1988 that included sounds from the TR-808</p>
+                        </div>
+                        <div id="g-ai3-6" class="g-md g-aiAbs g-aiPointText" style="top:45.9118%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">1995</p>
+                        </div>
+                        <div id="g-ai3-7" class="g-md g-aiAbs g-aiPointText" style="top:56.2195%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">2000</p>
+                        </div>
+                        <div id="g-ai3-8" class="g-md g-aiAbs g-aiPointText" style="top:66.5273%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">2005</p>
+                        </div>
+                        <div id="g-ai3-9" class="g-md g-aiAbs g-aiPointText" style="top:76.7404%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">2010</p>
+                        </div>
+                        <div id="g-ai3-10" class="g-md g-aiAbs g-aiPointText" style="top:87.0482%;margin-top:-11.5px;left:4.0055%;width:62px;">
+                            <p class="g-pstyle1">2015</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <script type="text/javascript">
+                    (function (containerId, opts) {
+                        var nameSpace = opts.namespace || '';
+                        var containers = findContainers(containerId);
+                        containers.forEach(resize);
+                
+                        function resize(container) {
+                            var onResize = throttle(update, 200);
+                            var waiting = !!window.IntersectionObserver;
+                            var observer;
+                            update();
+                
+                            document.addEventListener('DOMContentLoaded', update);
+                            window.addEventListener('resize', onResize);
+                
+                            // NYT Scoop-specific code
+                            if (opts.setup) {
+                                opts.setup(container).on('cleanup', cleanup);
+                            }
+                
+                            function cleanup() {
+                                document.removeEventListener('DOMContentLoaded', update);
+                                window.removeEventListener('resize', onResize);
+                                if (observer) observer.disconnect();
+                            }
+                
+                            function update() {
+                                var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                                        width = Math.round(container.getBoundingClientRect().width);
+                
+                                // Set artboard visibility based on container width
+                                artboards.forEach(function(el) {
+                                    var minwidth = el.getAttribute('data-min-width'),
+                                            maxwidth = el.getAttribute('data-max-width');
+                                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                        if (!waiting) {
+                                            selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                        }
+                                        el.style.display = 'block';
+                                    } else {
+                                        el.style.display = 'none';
+                                    }
+                                });
+                
+                                // Initialize lazy loading on first call
+                                if (waiting && !observer) {
+                                    if (elementInView(container)) {
+                                        waiting = false;
+                                        update();
+                                    } else {
+                                        observer = new IntersectionObserver(onIntersectionChange, {});
+                                        observer.observe(container);
+                                    }
+                                }
+                            }
+                
+                            function onIntersectionChange(entries) {
+                                // There may be multiple entries relating to the same container
+                                // (captured at different times)
+                                var isIntersecting = entries.reduce(function(memo, entry) {
+                                    return memo || entry.isIntersecting;
+                                }, false);
+                                if (isIntersecting) {
+                                    waiting = false;
+                                    // update: don't remove -- we need the observer to trigger an update
+                                    // when a hidden map becomes visible after user interaction
+                                    // (e.g. when an accordion menu or tab opens)
+                                    // observer.disconnect();
+                                    // observer = null;
+                                    update();
+                                }
+                            }
+                        }
+                
+                        function findContainers(id) {
+                            // support duplicate ids on the page
+                            return selectChildren('.ai2html-responsive', document).filter(function(el) {
+                                if (el.getAttribute('id') != id) return false;
+                                if (el.classList.contains('ai2html-resizer')) return false;
+                                el.classList.add('ai2html-resizer');
+                                return true;
+                            });
+                        }
+                
+                        // Replace blank placeholder image with actual image
+                        function updateImgSrc(img) {
+                            var src = img.getAttribute('data-src');
+                            if (src && img.getAttribute('src') != src) {
+                                img.setAttribute('src', src);
+                            }
+                        }
+                
+                        function elementInView(el) {
+                            var bounds = el.getBoundingClientRect();
+                            return bounds.top < window.innerHeight && bounds.bottom > 0;
+                        }
+                
+                        function selectChildren(selector, parent) {
+                            return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+                        }
+                
+                        // based on underscore.js
+                        function throttle(func, wait) {
+                            var timeout = null, previous = 0;
+                            function run() {
+                                    previous = Date.now();
+                                    timeout = null;
+                                    func();
+                            }
+                            return function() {
+                                var remaining = wait - (Date.now() - previous);
+                                if (remaining <= 0 || remaining > wait) {
+                                    clearTimeout(timeout);
+                                    run();
+                                } else if (!timeout) {
+                                    timeout = setTimeout(run, remaining);
+                                }
+                            };
+                        }
+                    })("g-220714-808s-records-count-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+                </script>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="story-body">
+        <p class="body-text serif">
+            The most records were made with the TR-808 in 1988, 5 years after the machine was discontinued. The 2 genres that consistently use the 808 the most are Electronic and Hip Hop, but...
+        </p>
+    </section>
+    <div class="chart">
+        <div id="g-220714-808s-genres-count-box" class="ai2html ai2html-responsive">
+
+            <!-- Artboard: lg -->
+            <div id="g-220714-808s-genres-count-lg" class="g-artboard" style="width:930px; height:1901.12712193173px;" data-aspect-ratio="0.489" data-min-width="930">
+        <div style=""></div>
+                <img id="g-220714-808s-genres-count-lg-img" class="g-808s-genres-count-lg-img g-aiImg" alt="" src="ai2html/images/220714-808s-genres-count-lg.png"/>
+                <div id="g-ai0-1" class="g-lg g-aiAbs g-aiPointText" style="top:1.7634%;margin-top:-23.5px;left:2.3195%;width:450px;">
+                    <p class="g-pstyle0">House (Music) Always Wins</p>
+                </div>
+                <div id="g-ai0-2" class="g-lg g-aiAbs g-aiPointText" style="top:3.9561%;margin-top:-14.2px;left:2.3195%;width:876px;">
+                    <p class="g-pstyle1">Electronic music was the genre that utilised the TR-808 the most, followed by Hip Hop in a far</p>
+                </div>
+                <div id="g-ai0-3" class="g-lg g-aiAbs g-aiPointText" style="top:5.2711%;margin-top:-14.2px;left:2.3195%;width:890px;">
+                    <p class="g-pstyle1">second. The style that dominated the use of the 808 was House music, a genre of dance music</p>
+                </div>
+                <div id="g-ai0-4" class="g-lg g-aiAbs g-aiPointText" style="top:6.5861%;margin-top:-14.2px;left:2.3195%;width:192px;">
+                    <p class="g-pstyle1">popular in the 80s.</p>
+                </div>
+                <div id="g-ai0-5" class="g-lg g-aiAbs g-aiPointText" style="top:8.6773%;margin-top:-12px;left:5.0152%;width:49px;">
+                    <p class="g-pstyle2">Hip</p>
+                </div>
+                <div id="g-ai0-6" class="g-lg g-aiAbs g-aiPointText" style="top:8.6773%;margin-top:-12px;left:7.9011%;width:130px;">
+                    <p class="g-pstyle2">​ Hop Records</p>
+                </div>
+                <div id="g-ai0-7" class="g-lg g-aiAbs g-aiPointText" style="top:8.6773%;margin-top:-12px;left:23.578%;width:100px;">
+                    <p class="g-pstyle2">Electronic</p>
+                </div>
+                <div id="g-ai0-8" class="g-lg g-aiAbs g-aiPointText" style="top:8.6773%;margin-top:-12px;left:31.9652%;width:93px;">
+                    <p class="g-pstyle2">​ Records</p>
+                </div>
+                <div id="g-ai0-9" class="g-lg g-aiAbs g-aiPointText" style="top:11.0969%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1981</p>
+                </div>
+                <div id="g-ai0-10" class="g-lg g-aiAbs g-aiPointText" style="top:13.4639%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1982</p>
+                </div>
+                <div id="g-ai0-11" class="g-lg g-aiAbs g-aiPointText" style="top:13.5165%;margin-top:-12px;left:26.3913%;width:42px;">
+                    <p class="g-pstyle3">34</p>
+                </div>
+                <div id="g-ai0-12" class="g-lg g-aiAbs g-aiPointText" style="top:15.8835%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1983</p>
+                </div>
+                <div id="g-ai0-13" class="g-lg g-aiAbs g-aiPointText" style="top:15.8835%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">10</p>
+                </div>
+                <div id="g-ai0-14" class="g-lg g-aiAbs g-aiPointText" style="top:15.8835%;margin-top:-12px;left:44.0771%;width:42px;">
+                    <p class="g-pstyle3">60</p>
+                </div>
+                <div id="g-ai0-15" class="g-lg g-aiAbs g-aiPointText" style="top:18.3032%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1984</p>
+                </div>
+                <div id="g-ai0-16" class="g-lg g-aiAbs g-aiPointText" style="top:18.3032%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">13</p>
+                </div>
+                <div id="g-ai0-17" class="g-lg g-aiAbs g-aiPointText" style="top:18.3032%;margin-top:-12px;left:57.895%;width:42px;">
+                    <p class="g-pstyle3">82</p>
+                </div>
+                <div id="g-ai0-18" class="g-lg g-aiAbs g-aiPointText" style="top:20.6702%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1985</p>
+                </div>
+                <div id="g-ai0-19" class="g-lg g-aiAbs g-aiPointText" style="top:20.7228%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">21</p>
+                </div>
+                <div id="g-ai0-20" class="g-lg g-aiAbs g-aiPointText" style="top:20.7228%;margin-top:-12px;left:42.4194%;width:42px;">
+                    <p class="g-pstyle3">46</p>
+                </div>
+                <div id="g-ai0-21" class="g-lg g-aiAbs g-aiPointText" style="top:23.0898%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1986</p>
+                </div>
+                <div id="g-ai0-22" class="g-lg g-aiAbs g-aiPointText" style="top:23.0898%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">27</p>
+                </div>
+                <div id="g-ai0-23" class="g-lg g-aiAbs g-aiPointText" style="top:23.0898%;margin-top:-12px;left:68.9479%;width:42px;">
+                    <p class="g-pstyle3">88</p>
+                </div>
+                <div id="g-ai0-24" class="g-lg g-aiAbs g-aiPointText" style="top:25.5094%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1987</p>
+                </div>
+                <div id="g-ai0-25" class="g-lg g-aiAbs g-aiPointText" style="top:25.5094%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">26</p>
+                </div>
+                <div id="g-ai0-26" class="g-lg g-aiAbs g-aiPointText" style="top:25.5094%;margin-top:-12px;left:83.3551%;width:50px;">
+                    <p class="g-pstyle3">117</p>
+                </div>
+                <div id="g-ai0-27" class="g-lg g-aiAbs g-aiPointText" style="top:27.929%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1988</p>
+                </div>
+                <div id="g-ai0-28" class="g-lg g-aiAbs g-aiPointText" style="top:27.929%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">26</p>
+                </div>
+                <div id="g-ai0-29" class="g-lg g-aiAbs g-aiPointText" style="top:27.929%;margin-top:-12px;left:93.3029%;width:52px;">
+                    <p class="g-pstyle3">135</p>
+                </div>
+                <div id="g-ai0-30" class="g-lg g-aiAbs g-aiPointText" style="top:30.296%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1989</p>
+                </div>
+                <div id="g-ai0-31" class="g-lg g-aiAbs g-aiPointText" style="top:30.3486%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">15</p>
+                </div>
+                <div id="g-ai0-32" class="g-lg g-aiAbs g-aiPointText" style="top:30.3486%;margin-top:-12px;left:79.4873%;width:52px;">
+                    <p class="g-pstyle3">121</p>
+                </div>
+                <div id="g-ai0-33" class="g-lg g-aiAbs g-aiPointText" style="top:32.7157%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1990</p>
+                </div>
+                <div id="g-ai0-34" class="g-lg g-aiAbs g-aiPointText" style="top:32.7157%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">9</p>
+                </div>
+                <div id="g-ai0-35" class="g-lg g-aiAbs g-aiPointText" style="top:32.7157%;margin-top:-12px;left:62.8702%;width:42px;">
+                    <p class="g-pstyle3">95</p>
+                </div>
+                <div id="g-ai0-36" class="g-lg g-aiAbs g-aiPointText" style="top:35.1353%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1991</p>
+                </div>
+                <div id="g-ai0-37" class="g-lg g-aiAbs g-aiPointText" style="top:35.1353%;margin-top:-12px;left:9.1108%;width:40px;">
+                    <p class="g-pstyle3">11</p>
+                </div>
+                <div id="g-ai0-38" class="g-lg g-aiAbs g-aiPointText" style="top:35.1353%;margin-top:-12px;left:42.4194%;width:42px;">
+                    <p class="g-pstyle3">56</p>
+                </div>
+                <div id="g-ai0-39" class="g-lg g-aiAbs g-aiPointText" style="top:37.5023%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1992</p>
+                </div>
+                <div id="g-ai0-40" class="g-lg g-aiAbs g-aiPointText" style="top:37.5549%;margin-top:-12px;left:9.1108%;width:40px;">
+                    <p class="g-pstyle3">11</p>
+                </div>
+                <div id="g-ai0-41" class="g-lg g-aiAbs g-aiPointText" style="top:37.5549%;margin-top:-12px;left:33.5766%;width:42px;">
+                    <p class="g-pstyle3">40</p>
+                </div>
+                <div id="g-ai0-42" class="g-lg g-aiAbs g-aiPointText" style="top:39.9219%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1993</p>
+                </div>
+                <div id="g-ai0-43" class="g-lg g-aiAbs g-aiPointText" style="top:39.9219%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">12</p>
+                </div>
+                <div id="g-ai0-44" class="g-lg g-aiAbs g-aiPointText" style="top:39.9219%;margin-top:-12px;left:31.9191%;width:42px;">
+                    <p class="g-pstyle3">36</p>
+                </div>
+                <div id="g-ai0-45" class="g-lg g-aiAbs g-aiPointText" style="top:42.3415%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1994</p>
+                </div>
+                <div id="g-ai0-46" class="g-lg g-aiAbs g-aiPointText" style="top:42.3415%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">9</p>
+                </div>
+                <div id="g-ai0-47" class="g-lg g-aiAbs g-aiPointText" style="top:42.3415%;margin-top:-12px;left:31.3665%;width:42px;">
+                    <p class="g-pstyle3">38</p>
+                </div>
+                <div id="g-ai0-48" class="g-lg g-aiAbs g-aiPointText" style="top:44.7611%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1995</p>
+                </div>
+                <div id="g-ai0-49" class="g-lg g-aiAbs g-aiPointText" style="top:44.7611%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai0-50" class="g-lg g-aiAbs g-aiPointText" style="top:44.7611%;margin-top:-12px;left:24.7338%;width:42px;">
+                    <p class="g-pstyle3">27</p>
+                </div>
+                <div id="g-ai0-51" class="g-lg g-aiAbs g-aiPointText" style="top:47.1282%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1996</p>
+                </div>
+                <div id="g-ai0-52" class="g-lg g-aiAbs g-aiPointText" style="top:47.1808%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">15</p>
+                </div>
+                <div id="g-ai0-53" class="g-lg g-aiAbs g-aiPointText" style="top:47.1808%;margin-top:-12px;left:25.8389%;width:42px;">
+                    <p class="g-pstyle3">22</p>
+                </div>
+                <div id="g-ai0-54" class="g-lg g-aiAbs g-aiPointText" style="top:49.5478%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1997</p>
+                </div>
+                <div id="g-ai0-55" class="g-lg g-aiAbs g-aiPointText" style="top:49.5478%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">9</p>
+                </div>
+                <div id="g-ai0-56" class="g-lg g-aiAbs g-aiPointText" style="top:49.5478%;margin-top:-12px;left:21.9712%;width:42px;">
+                    <p class="g-pstyle3">21</p>
+                </div>
+                <div id="g-ai0-57" class="g-lg g-aiAbs g-aiPointText" style="top:51.9674%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1998</p>
+                </div>
+                <div id="g-ai0-58" class="g-lg g-aiAbs g-aiPointText" style="top:51.9674%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai0-59" class="g-lg g-aiAbs g-aiPointText" style="top:51.9674%;margin-top:-12px;left:16.4435%;width:42px;">
+                    <p class="g-pstyle3">12</p>
+                </div>
+                <div id="g-ai0-60" class="g-lg g-aiAbs g-aiPointText" style="top:54.3344%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">1999</p>
+                </div>
+                <div id="g-ai0-61" class="g-lg g-aiAbs g-aiPointText" style="top:54.387%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai0-62" class="g-lg g-aiAbs g-aiPointText" style="top:54.387%;margin-top:-12px;left:15.3019%;width:32px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai0-63" class="g-lg g-aiAbs g-aiPointText" style="top:56.754%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2000</p>
+                </div>
+                <div id="g-ai0-64" class="g-lg g-aiAbs g-aiPointText" style="top:56.754%;margin-top:-12px;left:13.0894%;width:32px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai0-65" class="g-lg g-aiAbs g-aiPointText" style="top:59.1736%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2001</p>
+                </div>
+                <div id="g-ai0-66" class="g-lg g-aiAbs g-aiPointText" style="top:59.1736%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai0-67" class="g-lg g-aiAbs g-aiPointText" style="top:61.5933%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2002</p>
+                </div>
+                <div id="g-ai0-68" class="g-lg g-aiAbs g-aiPointText" style="top:63.9603%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2003</p>
+                </div>
+                <div id="g-ai0-69" class="g-lg g-aiAbs g-aiPointText" style="top:64.0129%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai0-70" class="g-lg g-aiAbs g-aiPointText" style="top:66.3799%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2004</p>
+                </div>
+                <div id="g-ai0-71" class="g-lg g-aiAbs g-aiPointText" style="top:66.3799%;margin-top:-12px;left:9.1108%;width:42px;">
+                    <p class="g-pstyle3">12</p>
+                </div>
+                <div id="g-ai0-72" class="g-lg g-aiAbs g-aiPointText" style="top:68.7995%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2005</p>
+                </div>
+                <div id="g-ai0-73" class="g-lg g-aiAbs g-aiPointText" style="top:68.7995%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">7</p>
+                </div>
+                <div id="g-ai0-74" class="g-lg g-aiAbs g-aiPointText" style="top:71.1665%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2006</p>
+                </div>
+                <div id="g-ai0-75" class="g-lg g-aiAbs g-aiPointText" style="top:71.2191%;margin-top:-12px;left:9.1108%;width:32px;">
+                    <p class="g-pstyle3">7</p>
+                </div>
+                <div id="g-ai0-76" class="g-lg g-aiAbs g-aiPointText" style="top:71.2191%;margin-top:-12px;left:13.6418%;width:32px;">
+                    <p class="g-pstyle3">6</p>
+                </div>
+                <div id="g-ai0-77" class="g-lg g-aiAbs g-aiPointText" style="top:73.5862%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2007</p>
+                </div>
+                <div id="g-ai0-78" class="g-lg g-aiAbs g-aiPointText" style="top:76.0058%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2008</p>
+                </div>
+                <div id="g-ai0-79" class="g-lg g-aiAbs g-aiPointText" style="top:76.0058%;margin-top:-12px;left:11.4317%;width:32px;">
+                    <p class="g-pstyle3">6</p>
+                </div>
+                <div id="g-ai0-80" class="g-lg g-aiAbs g-aiPointText" style="top:78.4254%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2009</p>
+                </div>
+                <div id="g-ai0-81" class="g-lg g-aiAbs g-aiPointText" style="top:78.4254%;margin-top:-12px;left:9.2217%;width:32px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai0-82" class="g-lg g-aiAbs g-aiPointText" style="top:80.7924%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2010</p>
+                </div>
+                <div id="g-ai0-83" class="g-lg g-aiAbs g-aiPointText" style="top:83.212%;margin-top:-12px;left:2.478%;width:60px;">
+                    <p class="g-pstyle2">2011</p>
+                </div>
+                <div id="g-ai0-84" class="g-lg g-aiAbs g-aiPointText" style="top:83.212%;margin-top:-12px;left:9.2217%;width:32px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai0-85" class="g-lg g-aiAbs g-aiPointText" style="top:85.6316%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2012</p>
+                </div>
+                <div id="g-ai0-86" class="g-lg g-aiAbs g-aiPointText" style="top:87.9987%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2013</p>
+                </div>
+                <div id="g-ai0-87" class="g-lg g-aiAbs g-aiPointText" style="top:90.4183%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2014</p>
+                </div>
+                <div id="g-ai0-88" class="g-lg g-aiAbs g-aiPointText" style="top:92.8379%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2016</p>
+                </div>
+                <div id="g-ai0-89" class="g-lg g-aiAbs g-aiPointText" style="top:95.2575%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2017</p>
+                </div>
+                <div id="g-ai0-90" class="g-lg g-aiAbs g-aiPointText" style="top:97.6245%;margin-top:-12px;left:2.478%;width:61px;">
+                    <p class="g-pstyle2">2019</p>
+                </div>
+            </div>
+        
+            <!-- Artboard: xs -->
+            <div id="g-220714-808s-genres-count-xs" class="g-artboard" style="max-width: 330px;max-height: 1582px" data-aspect-ratio="0.209" data-min-width="0" data-max-width="509">
+        <div style="padding: 0 0 479.4433% 0;"></div>
+                <img id="g-220714-808s-genres-count-xs-img" class="g-808s-genres-count-xs-img g-aiImg" alt="" src="ai2html/images/220714-808s-genres-count-xs.png"/>
+                <div id="g-ai1-1" class="g-xs g-aiAbs" style="top:0.632%;left:6.5367%;width:89.3939%;">
+                    <p class="g-pstyle0">House (Music) Always Wins</p>
+                </div>
+                <div id="g-ai1-2" class="g-xs g-aiAbs" style="top:5.7516%;left:6.5367%;width:89.3939%;">
+                    <p>Electronic music was the genre that utilised the TR-808 the most, followed by Hip Hop in a far second. The style that dominated the use of the 808 was House music, a genre of dance music popular in the 80s.</p>
+                </div>
+                <div id="g-ai1-3" class="g-xs g-aiAbs g-aiPointText" style="top:19.0857%;margin-top:-12px;left:32.7029%;width:49px;">
+                    <p class="g-pstyle1">Hip</p>
+                </div>
+                <div id="g-ai1-4" class="g-xs g-aiAbs g-aiPointText" style="top:19.0857%;margin-top:-12px;left:40.8359%;width:130px;">
+                    <p class="g-pstyle1">​ Hop Records</p>
+                </div>
+                <div id="g-ai1-5" class="g-xs g-aiAbs g-aiPointText" style="top:21.2346%;margin-top:-12px;left:32.731%;width:100px;">
+                    <p class="g-pstyle1">Electronic</p>
+                </div>
+                <div id="g-ai1-6" class="g-xs g-aiAbs g-aiPointText" style="top:21.2346%;margin-top:-12px;left:56.3676%;width:93px;">
+                    <p class="g-pstyle1">​ Records</p>
+                </div>
+                <div id="g-ai1-7" class="g-xs g-aiAbs g-aiPointText" style="top:23.9264%;margin-top:-11.6px;left:16.1565%;width:31px;">
+                    <p class="g-pstyle2">0</p>
+                </div>
+                <div id="g-ai1-8" class="g-xs g-aiAbs g-aiPointText" style="top:23.9264%;margin-top:-11.6px;left:86.4736%;width:50px;">
+                    <p class="g-pstyle2">135</p>
+                </div>
+                <div id="g-ai1-9" class="g-xs g-aiAbs g-aiPointText" style="top:25.4433%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1981</p>
+                </div>
+                <div id="g-ai1-10" class="g-xs g-aiAbs g-aiPointText" style="top:27.4659%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1982</p>
+                </div>
+                <div id="g-ai1-11" class="g-xs g-aiAbs g-aiPointText" style="top:29.4884%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1983</p>
+                </div>
+                <div id="g-ai1-12" class="g-xs g-aiAbs g-aiPointText" style="top:31.511%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1984</p>
+                </div>
+                <div id="g-ai1-13" class="g-xs g-aiAbs g-aiPointText" style="top:33.5335%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1985</p>
+                </div>
+                <div id="g-ai1-14" class="g-xs g-aiAbs g-aiPointText" style="top:35.556%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1986</p>
+                </div>
+                <div id="g-ai1-15" class="g-xs g-aiAbs g-aiPointText" style="top:37.5786%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1987</p>
+                </div>
+                <div id="g-ai1-16" class="g-xs g-aiAbs g-aiPointText" style="top:39.6012%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1988</p>
+                </div>
+                <div id="g-ai1-17" class="g-xs g-aiAbs g-aiPointText" style="top:41.6237%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1989</p>
+                </div>
+                <div id="g-ai1-18" class="g-xs g-aiAbs g-aiPointText" style="top:43.6462%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1990</p>
+                </div>
+                <div id="g-ai1-19" class="g-xs g-aiAbs g-aiPointText" style="top:45.6688%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1991</p>
+                </div>
+                <div id="g-ai1-20" class="g-xs g-aiAbs g-aiPointText" style="top:47.6913%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1992</p>
+                </div>
+                <div id="g-ai1-21" class="g-xs g-aiAbs g-aiPointText" style="top:49.7139%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1993</p>
+                </div>
+                <div id="g-ai1-22" class="g-xs g-aiAbs g-aiPointText" style="top:51.7996%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1994</p>
+                </div>
+                <div id="g-ai1-23" class="g-xs g-aiAbs g-aiPointText" style="top:53.8222%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1995</p>
+                </div>
+                <div id="g-ai1-24" class="g-xs g-aiAbs g-aiPointText" style="top:55.8447%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1996</p>
+                </div>
+                <div id="g-ai1-25" class="g-xs g-aiAbs g-aiPointText" style="top:57.8673%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1997</p>
+                </div>
+                <div id="g-ai1-26" class="g-xs g-aiAbs g-aiPointText" style="top:59.8898%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1998</p>
+                </div>
+                <div id="g-ai1-27" class="g-xs g-aiAbs g-aiPointText" style="top:61.9124%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">1999</p>
+                </div>
+                <div id="g-ai1-28" class="g-xs g-aiAbs g-aiPointText" style="top:63.9349%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2000</p>
+                </div>
+                <div id="g-ai1-29" class="g-xs g-aiAbs g-aiPointText" style="top:65.9575%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2001</p>
+                </div>
+                <div id="g-ai1-30" class="g-xs g-aiAbs g-aiPointText" style="top:67.98%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2002</p>
+                </div>
+                <div id="g-ai1-31" class="g-xs g-aiAbs g-aiPointText" style="top:70.0025%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2003</p>
+                </div>
+                <div id="g-ai1-32" class="g-xs g-aiAbs g-aiPointText" style="top:72.0251%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2004</p>
+                </div>
+                <div id="g-ai1-33" class="g-xs g-aiAbs g-aiPointText" style="top:74.0477%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2005</p>
+                </div>
+                <div id="g-ai1-34" class="g-xs g-aiAbs g-aiPointText" style="top:76.0702%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2006</p>
+                </div>
+                <div id="g-ai1-35" class="g-xs g-aiAbs g-aiPointText" style="top:78.0927%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2007</p>
+                </div>
+                <div id="g-ai1-36" class="g-xs g-aiAbs g-aiPointText" style="top:80.1153%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2008</p>
+                </div>
+                <div id="g-ai1-37" class="g-xs g-aiAbs g-aiPointText" style="top:82.1378%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2009</p>
+                </div>
+                <div id="g-ai1-38" class="g-xs g-aiAbs g-aiPointText" style="top:84.1604%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2010</p>
+                </div>
+                <div id="g-ai1-39" class="g-xs g-aiAbs g-aiPointText" style="top:86.183%;margin-top:-11.6px;left:2.741%;width:59px;">
+                    <p class="g-pstyle2">2011</p>
+                </div>
+                <div id="g-ai1-40" class="g-xs g-aiAbs g-aiPointText" style="top:88.2055%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2012</p>
+                </div>
+                <div id="g-ai1-41" class="g-xs g-aiAbs g-aiPointText" style="top:90.228%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2013</p>
+                </div>
+                <div id="g-ai1-42" class="g-xs g-aiAbs g-aiPointText" style="top:92.2506%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2014</p>
+                </div>
+                <div id="g-ai1-43" class="g-xs g-aiAbs g-aiPointText" style="top:94.2731%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2016</p>
+                </div>
+                <div id="g-ai1-44" class="g-xs g-aiAbs g-aiPointText" style="top:96.3589%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2017</p>
+                </div>
+                <div id="g-ai1-45" class="g-xs g-aiAbs g-aiPointText" style="top:98.3815%;margin-top:-11.6px;left:2.741%;width:60px;">
+                    <p class="g-pstyle2">2019</p>
+                </div>
+            </div>
+        
+            <!-- Artboard: sm -->
+            <div id="g-220714-808s-genres-count-sm" class="g-artboard" style="width:510px; height:1457.26443609899px;" data-aspect-ratio="0.35" data-min-width="510" data-max-width="659">
+        <div style=""></div>
+                <img id="g-220714-808s-genres-count-sm-img" class="g-808s-genres-count-sm-img g-aiImg" alt="" src="ai2html/images/220714-808s-genres-count-sm.png"/>
+                <div id="g-ai2-1" class="g-sm g-aiAbs g-aiPointText" style="top:2.3005%;margin-top:-23.5px;left:4.2296%;width:450px;">
+                    <p class="g-pstyle0">House (Music) Always Wins</p>
+                </div>
+                <div id="g-ai2-2" class="g-sm g-aiAbs" style="top:4.1859%;left:4.2296%;width:92.3529%;">
+                    <p>Electronic music was the genre that utilised the TR-808 the most, followed by Hip Hop in a far second. The style that dominated the use of the 808 was House music, a genre of dance music popular in the 80s.</p>
+                </div>
+                <div id="g-ai2-3" class="g-sm g-aiAbs g-aiPointText" style="top:14.7514%;margin-top:-12px;left:8.361%;width:49px;">
+                    <p class="g-pstyle1">Hip</p>
+                </div>
+                <div id="g-ai2-4" class="g-sm g-aiAbs g-aiPointText" style="top:14.7514%;margin-top:-12px;left:13.6235%;width:130px;">
+                    <p class="g-pstyle1">​ Hop Records</p>
+                </div>
+                <div id="g-ai2-5" class="g-sm g-aiAbs g-aiPointText" style="top:14.7514%;margin-top:-12px;left:42.2108%;width:100px;">
+                    <p class="g-pstyle1">Electronic</p>
+                </div>
+                <div id="g-ai2-6" class="g-sm g-aiAbs g-aiPointText" style="top:14.7514%;margin-top:-12px;left:57.5051%;width:93px;">
+                    <p class="g-pstyle1">​ Records</p>
+                </div>
+                <div id="g-ai2-7" class="g-sm g-aiAbs g-aiPointText" style="top:17.0563%;margin-top:-11.6px;left:9.143%;width:31px;">
+                    <p class="g-pstyle2">0</p>
+                </div>
+                <div id="g-ai2-8" class="g-sm g-aiAbs g-aiPointText" style="top:17.0563%;margin-top:-11.6px;left:91.8556%;width:50px;">
+                    <p class="g-pstyle2">135</p>
+                </div>
+                <div id="g-ai2-9" class="g-sm g-aiAbs g-aiPointText" style="top:18.7032%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1981</p>
+                </div>
+                <div id="g-ai2-10" class="g-sm g-aiAbs g-aiPointText" style="top:20.8991%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1982</p>
+                </div>
+                <div id="g-ai2-11" class="g-sm g-aiAbs g-aiPointText" style="top:23.0949%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1983</p>
+                </div>
+                <div id="g-ai2-12" class="g-sm g-aiAbs g-aiPointText" style="top:25.2909%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1984</p>
+                </div>
+                <div id="g-ai2-13" class="g-sm g-aiAbs g-aiPointText" style="top:27.4868%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1985</p>
+                </div>
+                <div id="g-ai2-14" class="g-sm g-aiAbs g-aiPointText" style="top:29.6826%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1986</p>
+                </div>
+                <div id="g-ai2-15" class="g-sm g-aiAbs g-aiPointText" style="top:31.8785%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1987</p>
+                </div>
+                <div id="g-ai2-16" class="g-sm g-aiAbs g-aiPointText" style="top:34.0744%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1988</p>
+                </div>
+                <div id="g-ai2-17" class="g-sm g-aiAbs g-aiPointText" style="top:36.2703%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1989</p>
+                </div>
+                <div id="g-ai2-18" class="g-sm g-aiAbs g-aiPointText" style="top:38.4662%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1990</p>
+                </div>
+                <div id="g-ai2-19" class="g-sm g-aiAbs g-aiPointText" style="top:40.6621%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1991</p>
+                </div>
+                <div id="g-ai2-20" class="g-sm g-aiAbs g-aiPointText" style="top:42.858%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1992</p>
+                </div>
+                <div id="g-ai2-21" class="g-sm g-aiAbs g-aiPointText" style="top:45.0539%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1993</p>
+                </div>
+                <div id="g-ai2-22" class="g-sm g-aiAbs g-aiPointText" style="top:47.3184%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1994</p>
+                </div>
+                <div id="g-ai2-23" class="g-sm g-aiAbs g-aiPointText" style="top:49.5143%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1995</p>
+                </div>
+                <div id="g-ai2-24" class="g-sm g-aiAbs g-aiPointText" style="top:51.7102%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1996</p>
+                </div>
+                <div id="g-ai2-25" class="g-sm g-aiAbs g-aiPointText" style="top:53.9061%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1997</p>
+                </div>
+                <div id="g-ai2-26" class="g-sm g-aiAbs g-aiPointText" style="top:56.102%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1998</p>
+                </div>
+                <div id="g-ai2-27" class="g-sm g-aiAbs g-aiPointText" style="top:58.2979%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">1999</p>
+                </div>
+                <div id="g-ai2-28" class="g-sm g-aiAbs g-aiPointText" style="top:60.4938%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2000</p>
+                </div>
+                <div id="g-ai2-29" class="g-sm g-aiAbs g-aiPointText" style="top:62.6897%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2001</p>
+                </div>
+                <div id="g-ai2-30" class="g-sm g-aiAbs g-aiPointText" style="top:64.8856%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2002</p>
+                </div>
+                <div id="g-ai2-31" class="g-sm g-aiAbs g-aiPointText" style="top:67.0815%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2003</p>
+                </div>
+                <div id="g-ai2-32" class="g-sm g-aiAbs g-aiPointText" style="top:69.2774%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2004</p>
+                </div>
+                <div id="g-ai2-33" class="g-sm g-aiAbs g-aiPointText" style="top:71.4733%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2005</p>
+                </div>
+                <div id="g-ai2-34" class="g-sm g-aiAbs g-aiPointText" style="top:73.6691%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2006</p>
+                </div>
+                <div id="g-ai2-35" class="g-sm g-aiAbs g-aiPointText" style="top:75.865%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2007</p>
+                </div>
+                <div id="g-ai2-36" class="g-sm g-aiAbs g-aiPointText" style="top:78.061%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2008</p>
+                </div>
+                <div id="g-ai2-37" class="g-sm g-aiAbs g-aiPointText" style="top:80.2568%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2009</p>
+                </div>
+                <div id="g-ai2-38" class="g-sm g-aiAbs g-aiPointText" style="top:82.4527%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2010</p>
+                </div>
+                <div id="g-ai2-39" class="g-sm g-aiAbs g-aiPointText" style="top:84.6487%;margin-top:-11.6px;left:1.7736%;width:59px;">
+                    <p class="g-pstyle2">2011</p>
+                </div>
+                <div id="g-ai2-40" class="g-sm g-aiAbs g-aiPointText" style="top:86.8445%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2012</p>
+                </div>
+                <div id="g-ai2-41" class="g-sm g-aiAbs g-aiPointText" style="top:89.0404%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2013</p>
+                </div>
+                <div id="g-ai2-42" class="g-sm g-aiAbs g-aiPointText" style="top:91.2363%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2014</p>
+                </div>
+                <div id="g-ai2-43" class="g-sm g-aiAbs g-aiPointText" style="top:93.4322%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2016</p>
+                </div>
+                <div id="g-ai2-44" class="g-sm g-aiAbs g-aiPointText" style="top:95.6967%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2017</p>
+                </div>
+                <div id="g-ai2-45" class="g-sm g-aiAbs g-aiPointText" style="top:97.8926%;margin-top:-11.6px;left:1.7736%;width:60px;">
+                    <p class="g-pstyle2">2019</p>
+                </div>
+            </div>
+        
+            <!-- Artboard: md -->
+            <div id="g-220714-808s-genres-count-md" class="g-artboard" style="width:660px; height:1423.34938405892px;" data-aspect-ratio="0.464" data-min-width="660" data-max-width="929">
+        <div style=""></div>
+                <img id="g-220714-808s-genres-count-md-img" class="g-808s-genres-count-md-img g-aiImg" alt="" src="ai2html/images/220714-808s-genres-count-md.png"/>
+                <div id="g-ai3-1" class="g-md g-aiAbs g-aiPointText" style="top:2.3553%;margin-top:-23.5px;left:3.2683%;width:450px;">
+                    <p class="g-pstyle0">House (Music) Always Wins</p>
+                </div>
+                <div id="g-ai3-2" class="g-md g-aiAbs" style="top:4.2857%;left:3.2684%;width:90.7576%;">
+                    <p>Electronic music was the genre that utilised the TR-808 the most, followed by Hip Hop in a far second. The style that dominated the use of the 808 was House music, a genre of dance music popular in the 80s.</p>
+                </div>
+                <div id="g-ai3-3" class="g-md g-aiAbs g-aiPointText" style="top:14.4003%;margin-top:-12px;left:7.0669%;width:49px;">
+                    <p class="g-pstyle1">Hip</p>
+                </div>
+                <div id="g-ai3-4" class="g-md g-aiAbs g-aiPointText" style="top:14.4003%;margin-top:-12px;left:11.1334%;width:130px;">
+                    <p class="g-pstyle1">​ Hop Records</p>
+                </div>
+                <div id="g-ai3-5" class="g-md g-aiAbs g-aiPointText" style="top:14.4003%;margin-top:-12px;left:33.2235%;width:100px;">
+                    <p class="g-pstyle1">Electronic</p>
+                </div>
+                <div id="g-ai3-6" class="g-md g-aiAbs g-aiPointText" style="top:14.4003%;margin-top:-12px;left:45.0418%;width:93px;">
+                    <p class="g-pstyle1">​ Records</p>
+                </div>
+                <div id="g-ai3-7" class="g-md g-aiAbs g-aiPointText" style="top:17.0411%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1981</p>
+                </div>
+                <div id="g-ai3-8" class="g-md g-aiAbs g-aiPointText" style="top:19.2893%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1982</p>
+                </div>
+                <div id="g-ai3-9" class="g-md g-aiAbs g-aiPointText" style="top:19.2893%;margin-top:-11.6px;left:26.5055%;width:41px;">
+                    <p class="g-pstyle3">34</p>
+                </div>
+                <div id="g-ai3-10" class="g-md g-aiAbs g-aiPointText" style="top:21.5375%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1983</p>
+                </div>
+                <div id="g-ai3-11" class="g-md g-aiAbs g-aiPointText" style="top:21.5376%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">10</p>
+                </div>
+                <div id="g-ai3-12" class="g-md g-aiAbs g-aiPointText" style="top:21.5376%;margin-top:-11.6px;left:43.9743%;width:41px;">
+                    <p class="g-pstyle3">60</p>
+                </div>
+                <div id="g-ai3-13" class="g-md g-aiAbs g-aiPointText" style="top:23.7858%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1984</p>
+                </div>
+                <div id="g-ai3-14" class="g-md g-aiAbs g-aiPointText" style="top:23.7857%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">13</p>
+                </div>
+                <div id="g-ai3-15" class="g-md g-aiAbs g-aiPointText" style="top:23.7857%;margin-top:-11.6px;left:57.6226%;width:41px;">
+                    <p class="g-pstyle3">82</p>
+                </div>
+                <div id="g-ai3-16" class="g-md g-aiAbs g-aiPointText" style="top:26.034%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1985</p>
+                </div>
+                <div id="g-ai3-17" class="g-md g-aiAbs g-aiPointText" style="top:26.034%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">21</p>
+                </div>
+                <div id="g-ai3-18" class="g-md g-aiAbs g-aiPointText" style="top:26.034%;margin-top:-11.6px;left:42.337%;width:41px;">
+                    <p class="g-pstyle3">46</p>
+                </div>
+                <div id="g-ai3-19" class="g-md g-aiAbs g-aiPointText" style="top:28.2822%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1986</p>
+                </div>
+                <div id="g-ai3-20" class="g-md g-aiAbs g-aiPointText" style="top:28.2822%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">27</p>
+                </div>
+                <div id="g-ai3-21" class="g-md g-aiAbs g-aiPointText" style="top:28.2822%;margin-top:-11.6px;left:68.54%;width:41px;">
+                    <p class="g-pstyle3">88</p>
+                </div>
+                <div id="g-ai3-22" class="g-md g-aiAbs g-aiPointText" style="top:30.5304%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1987</p>
+                </div>
+                <div id="g-ai3-23" class="g-md g-aiAbs g-aiPointText" style="top:30.5304%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">26</p>
+                </div>
+                <div id="g-ai3-24" class="g-md g-aiAbs g-aiPointText" style="top:30.5304%;margin-top:-11.6px;left:82.7703%;width:49px;">
+                    <p class="g-pstyle3">117</p>
+                </div>
+                <div id="g-ai3-25" class="g-md g-aiAbs g-aiPointText" style="top:32.7786%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1988</p>
+                </div>
+                <div id="g-ai3-26" class="g-md g-aiAbs g-aiPointText" style="top:32.7786%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">26</p>
+                </div>
+                <div id="g-ai3-27" class="g-md g-aiAbs g-aiPointText" style="top:32.7786%;margin-top:-11.6px;left:92.596%;width:50px;">
+                    <p class="g-pstyle3">135</p>
+                </div>
+                <div id="g-ai3-28" class="g-md g-aiAbs g-aiPointText" style="top:35.0268%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1989</p>
+                </div>
+                <div id="g-ai3-29" class="g-md g-aiAbs g-aiPointText" style="top:35.0971%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">15</p>
+                </div>
+                <div id="g-ai3-30" class="g-md g-aiAbs g-aiPointText" style="top:35.0971%;margin-top:-11.6px;left:78.95%;width:50px;">
+                    <p class="g-pstyle3">121</p>
+                </div>
+                <div id="g-ai3-31" class="g-md g-aiAbs g-aiPointText" style="top:37.2751%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1990</p>
+                </div>
+                <div id="g-ai3-32" class="g-md g-aiAbs g-aiPointText" style="top:37.3453%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">9</p>
+                </div>
+                <div id="g-ai3-33" class="g-md g-aiAbs g-aiPointText" style="top:37.3453%;margin-top:-11.6px;left:62.5368%;width:41px;">
+                    <p class="g-pstyle3">95</p>
+                </div>
+                <div id="g-ai3-34" class="g-md g-aiAbs g-aiPointText" style="top:39.5233%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1991</p>
+                </div>
+                <div id="g-ai3-35" class="g-md g-aiAbs g-aiPointText" style="top:39.5935%;margin-top:-11.6px;left:10.043%;width:40px;">
+                    <p class="g-pstyle3">11</p>
+                </div>
+                <div id="g-ai3-36" class="g-md g-aiAbs g-aiPointText" style="top:39.5935%;margin-top:-11.6px;left:42.337%;width:41px;">
+                    <p class="g-pstyle3">56</p>
+                </div>
+                <div id="g-ai3-37" class="g-md g-aiAbs g-aiPointText" style="top:41.7715%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1992</p>
+                </div>
+                <div id="g-ai3-38" class="g-md g-aiAbs g-aiPointText" style="top:41.8418%;margin-top:-11.6px;left:10.043%;width:40px;">
+                    <p class="g-pstyle3">11</p>
+                </div>
+                <div id="g-ai3-39" class="g-md g-aiAbs g-aiPointText" style="top:41.8418%;margin-top:-11.6px;left:33.6027%;width:41px;">
+                    <p class="g-pstyle3">40</p>
+                </div>
+                <div id="g-ai3-40" class="g-md g-aiAbs g-aiPointText" style="top:44.0197%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1993</p>
+                </div>
+                <div id="g-ai3-41" class="g-md g-aiAbs g-aiPointText" style="top:44.09%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">12</p>
+                </div>
+                <div id="g-ai3-42" class="g-md g-aiAbs g-aiPointText" style="top:44.09%;margin-top:-11.6px;left:31.9655%;width:41px;">
+                    <p class="g-pstyle3">36</p>
+                </div>
+                <div id="g-ai3-43" class="g-md g-aiAbs g-aiPointText" style="top:46.3382%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1994</p>
+                </div>
+                <div id="g-ai3-44" class="g-md g-aiAbs g-aiPointText" style="top:46.3382%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">9</p>
+                </div>
+                <div id="g-ai3-45" class="g-md g-aiAbs g-aiPointText" style="top:46.3382%;margin-top:-11.6px;left:31.4197%;width:41px;">
+                    <p class="g-pstyle3">38</p>
+                </div>
+                <div id="g-ai3-46" class="g-md g-aiAbs g-aiPointText" style="top:48.5864%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1995</p>
+                </div>
+                <div id="g-ai3-47" class="g-md g-aiAbs g-aiPointText" style="top:48.5864%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai3-48" class="g-md g-aiAbs g-aiPointText" style="top:48.5864%;margin-top:-11.6px;left:24.8684%;width:41px;">
+                    <p class="g-pstyle3">27</p>
+                </div>
+                <div id="g-ai3-49" class="g-md g-aiAbs g-aiPointText" style="top:50.8347%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1996</p>
+                </div>
+                <div id="g-ai3-50" class="g-md g-aiAbs g-aiPointText" style="top:50.8346%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">15</p>
+                </div>
+                <div id="g-ai3-51" class="g-md g-aiAbs g-aiPointText" style="top:50.8346%;margin-top:-11.6px;left:25.9598%;width:41px;">
+                    <p class="g-pstyle3">22</p>
+                </div>
+                <div id="g-ai3-52" class="g-md g-aiAbs g-aiPointText" style="top:53.0829%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1997</p>
+                </div>
+                <div id="g-ai3-53" class="g-md g-aiAbs g-aiPointText" style="top:53.0829%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">9</p>
+                </div>
+                <div id="g-ai3-54" class="g-md g-aiAbs g-aiPointText" style="top:53.0829%;margin-top:-11.6px;left:22.1397%;width:41px;">
+                    <p class="g-pstyle3">21</p>
+                </div>
+                <div id="g-ai3-55" class="g-md g-aiAbs g-aiPointText" style="top:55.3311%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1998</p>
+                </div>
+                <div id="g-ai3-56" class="g-md g-aiAbs g-aiPointText" style="top:55.3311%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai3-57" class="g-md g-aiAbs g-aiPointText" style="top:55.3311%;margin-top:-11.6px;left:16.6798%;width:41px;">
+                    <p class="g-pstyle3">12</p>
+                </div>
+                <div id="g-ai3-58" class="g-md g-aiAbs g-aiPointText" style="top:57.5793%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">1999</p>
+                </div>
+                <div id="g-ai3-59" class="g-md g-aiAbs g-aiPointText" style="top:57.5793%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai3-60" class="g-md g-aiAbs g-aiPointText" style="top:57.5793%;margin-top:-11.6px;left:15.5521%;width:31px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai3-61" class="g-md g-aiAbs g-aiPointText" style="top:59.8275%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2000</p>
+                </div>
+                <div id="g-ai3-62" class="g-md g-aiAbs g-aiPointText" style="top:59.8275%;margin-top:-11.6px;left:13.3669%;width:31px;">
+                    <p class="g-pstyle3">8</p>
+                </div>
+                <div id="g-ai3-63" class="g-md g-aiAbs g-aiPointText" style="top:62.0757%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2001</p>
+                </div>
+                <div id="g-ai3-64" class="g-md g-aiAbs g-aiPointText" style="top:62.0757%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai3-65" class="g-md g-aiAbs g-aiPointText" style="top:64.324%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2002</p>
+                </div>
+                <div id="g-ai3-66" class="g-md g-aiAbs g-aiPointText" style="top:66.5721%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2003</p>
+                </div>
+                <div id="g-ai3-67" class="g-md g-aiAbs g-aiPointText" style="top:66.5722%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai3-68" class="g-md g-aiAbs g-aiPointText" style="top:68.8204%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2004</p>
+                </div>
+                <div id="g-ai3-69" class="g-md g-aiAbs g-aiPointText" style="top:68.8204%;margin-top:-11.6px;left:10.043%;width:41px;">
+                    <p class="g-pstyle3">12</p>
+                </div>
+                <div id="g-ai3-70" class="g-md g-aiAbs g-aiPointText" style="top:71.0686%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2005</p>
+                </div>
+                <div id="g-ai3-71" class="g-md g-aiAbs g-aiPointText" style="top:71.0686%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">7</p>
+                </div>
+                <div id="g-ai3-72" class="g-md g-aiAbs g-aiPointText" style="top:73.3168%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2006</p>
+                </div>
+                <div id="g-ai3-73" class="g-md g-aiAbs g-aiPointText" style="top:73.3168%;margin-top:-11.6px;left:10.043%;width:31px;">
+                    <p class="g-pstyle3">7</p>
+                </div>
+                <div id="g-ai3-74" class="g-md g-aiAbs g-aiPointText" style="top:73.3168%;margin-top:-11.6px;left:14.5186%;width:31px;">
+                    <p class="g-pstyle3">6</p>
+                </div>
+                <div id="g-ai3-75" class="g-md g-aiAbs g-aiPointText" style="top:75.565%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2007</p>
+                </div>
+                <div id="g-ai3-76" class="g-md g-aiAbs g-aiPointText" style="top:77.8133%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2008</p>
+                </div>
+                <div id="g-ai3-77" class="g-md g-aiAbs g-aiPointText" style="top:77.8133%;margin-top:-11.6px;left:12.3356%;width:31px;">
+                    <p class="g-pstyle3">6</p>
+                </div>
+                <div id="g-ai3-78" class="g-md g-aiAbs g-aiPointText" style="top:80.0615%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2009</p>
+                </div>
+                <div id="g-ai3-79" class="g-md g-aiAbs g-aiPointText" style="top:80.0615%;margin-top:-11.6px;left:10.1526%;width:31px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai3-80" class="g-md g-aiAbs g-aiPointText" style="top:82.3097%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2010</p>
+                </div>
+                <div id="g-ai3-81" class="g-md g-aiAbs g-aiPointText" style="top:84.5579%;margin-top:-11.6px;left:1.9766%;width:59px;">
+                    <p class="g-pstyle2">2011</p>
+                </div>
+                <div id="g-ai3-82" class="g-md g-aiAbs g-aiPointText" style="top:84.6281%;margin-top:-11.6px;left:10.1526%;width:31px;">
+                    <p class="g-pstyle3">5</p>
+                </div>
+                <div id="g-ai3-83" class="g-md g-aiAbs g-aiPointText" style="top:86.8061%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2012</p>
+                </div>
+                <div id="g-ai3-84" class="g-md g-aiAbs g-aiPointText" style="top:89.0543%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2013</p>
+                </div>
+                <div id="g-ai3-85" class="g-md g-aiAbs g-aiPointText" style="top:91.3026%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2014</p>
+                </div>
+                <div id="g-ai3-86" class="g-md g-aiAbs g-aiPointText" style="top:93.5508%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2016</p>
+                </div>
+                <div id="g-ai3-87" class="g-md g-aiAbs g-aiPointText" style="top:95.8692%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2017</p>
+                </div>
+                <div id="g-ai3-88" class="g-md g-aiAbs g-aiPointText" style="top:98.1175%;margin-top:-11.6px;left:1.9766%;width:60px;">
+                    <p class="g-pstyle2">2019</p>
+                </div>
+            </div>
+        
+        </div>
+        
+        <script type="text/javascript">
+            (function (containerId, opts) {
+                var nameSpace = opts.namespace || '';
+                var containers = findContainers(containerId);
+                containers.forEach(resize);
+        
+                function resize(container) {
+                    var onResize = throttle(update, 200);
+                    var waiting = !!window.IntersectionObserver;
+                    var observer;
+                    update();
+        
+                    document.addEventListener('DOMContentLoaded', update);
+                    window.addEventListener('resize', onResize);
+        
+                    // NYT Scoop-specific code
+                    if (opts.setup) {
+                        opts.setup(container).on('cleanup', cleanup);
+                    }
+        
+                    function cleanup() {
+                        document.removeEventListener('DOMContentLoaded', update);
+                        window.removeEventListener('resize', onResize);
+                        if (observer) observer.disconnect();
+                    }
+        
+                    function update() {
+                        var artboards = selectChildren('.' + nameSpace + 'artboard[data-min-width]', container),
+                                width = Math.round(container.getBoundingClientRect().width);
+        
+                        // Set artboard visibility based on container width
+                        artboards.forEach(function(el) {
+                            var minwidth = el.getAttribute('data-min-width'),
+                                    maxwidth = el.getAttribute('data-max-width');
+                            if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                if (!waiting) {
+                                    selectChildren('.' + nameSpace + 'aiImg', el).forEach(updateImgSrc);
+                                }
+                                el.style.display = 'block';
+                            } else {
+                                el.style.display = 'none';
+                            }
+                        });
+        
+                        // Initialize lazy loading on first call
+                        if (waiting && !observer) {
+                            if (elementInView(container)) {
+                                waiting = false;
+                                update();
+                            } else {
+                                observer = new IntersectionObserver(onIntersectionChange, {});
+                                observer.observe(container);
+                            }
+                        }
+                    }
+        
+                    function onIntersectionChange(entries) {
+                        // There may be multiple entries relating to the same container
+                        // (captured at different times)
+                        var isIntersecting = entries.reduce(function(memo, entry) {
+                            return memo || entry.isIntersecting;
+                        }, false);
+                        if (isIntersecting) {
+                            waiting = false;
+                            // update: don't remove -- we need the observer to trigger an update
+                            // when a hidden map becomes visible after user interaction
+                            // (e.g. when an accordion menu or tab opens)
+                            // observer.disconnect();
+                            // observer = null;
+                            update();
+                        }
+                    }
+                }
+        
+                function findContainers(id) {
+                    // support duplicate ids on the page
+                    return selectChildren('.ai2html-responsive', document).filter(function(el) {
+                        if (el.getAttribute('id') != id) return false;
+                        if (el.classList.contains('ai2html-resizer')) return false;
+                        el.classList.add('ai2html-resizer');
+                        return true;
+                    });
+                }
+        
+                // Replace blank placeholder image with actual image
+                function updateImgSrc(img) {
+                    var src = img.getAttribute('data-src');
+                    if (src && img.getAttribute('src') != src) {
+                        img.setAttribute('src', src);
+                    }
+                }
+        
+                function elementInView(el) {
+                    var bounds = el.getBoundingClientRect();
+                    return bounds.top < window.innerHeight && bounds.bottom > 0;
+                }
+        
+                function selectChildren(selector, parent) {
+                    return parent ? Array.prototype.slice.call(parent.querySelectorAll(selector)) : [];
+                }
+        
+                // based on underscore.js
+                function throttle(func, wait) {
+                    var timeout = null, previous = 0;
+                    function run() {
+                            previous = Date.now();
+                            timeout = null;
+                            func();
+                    }
+                    return function() {
+                        var remaining = wait - (Date.now() - previous);
+                        if (remaining <= 0 || remaining > wait) {
+                            clearTimeout(timeout);
+                            run();
+                        } else if (!timeout) {
+                            timeout = setTimeout(run, remaining);
+                        }
+                    };
+                }
+            })("g-220714-808s-genres-count-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+        </script>
+    </div>
+    <section class="story-body">
+        <p class="body text serif";>
+            As of late, there's been a resurgence of house in mainstream music - think Drake's “Sticky” and “Massive” off his latest album, Honestly, Nevermind, and Beyoncé's hit recession anthem Break My Soul - so we might see the second coming of the 808.<br><br>
+
+            I think that there's a lot more that can be done with this dataset. Perhaps the next step would be to see how many charted songs make use of the 808, or which artist has the most songs that feature the 808.<br><br>
+        </p>
+        <h2>Methodology</h2>
+        <p class="body text serif";>
+            List of records retrieved using the Discogs API, data analysis performed using Python and Pandas in Jupyter Notebook. Additional research via SMD and the official Roland website.
+        </p>
+    </section>
+</body>
+
+</html>
